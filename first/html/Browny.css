@@ -1,0 +1,24 @@
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 2px solid black;
+    margin: auto;
+}
+
+.nav h1{
+    color: blueviolet;
+    margin: 100px;
+}
+.nav ul{
+    display:flex;
+    flex: 20%;
+    justify-content: space-between;
+}
+
+.start{
+    background-image: url('welcome-banner.jpg');
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

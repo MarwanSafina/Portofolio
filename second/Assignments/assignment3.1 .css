@@ -1,0 +1,15 @@
+.tbl{
+    color: beige;
+    /*background-color: blue;*/
+    border: 30px solid;
+    border-image: url("marsa-allam.jpg");
+    background:radial-gradient(blue,brown, white);
+    font-size: 30px;
+    line-height: 1.5;
+    text-shadow: 5px black;
+}
+.bd{
+    background-image: url("AAST-logo.png");
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+}

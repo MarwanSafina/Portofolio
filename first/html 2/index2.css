@@ -1,0 +1,75 @@
+@keyframes first{
+    0%{ opacity: 0;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;}
+}
+@keyframes second{
+   from{transform: rotate(70deg);}
+    to{transform: rotate(140deg);}
+    to{transform: rotate(210deg);}
+    to{transform: rotate(280deg);}
+}
+.navs{
+    display: flex;
+    margin: auto;
+    padding: 0%;
+    justify-content: space-between;
+    background-color: color-mix(in hsl shorter hue, orange 10%, red 20%);
+    border: 10px dashed gray;
+}
+.navs ul{
+    display: flex;
+    margin: auto;
+    padding: auto;
+    width: 900px;
+    justify-content: space-around;
+}
+
+.navs li:hover{
+    transform: scale(1.2,1.2);
+}
+
+.mart{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.mart div{
+    flex: 30%;
+    background-color: dimgray;
+    border: 3px solid black;
+    margin: 20px;
+    transform: scale(0.7,1);
+    text-align: center;
+}
+.mart div:hover{
+    transform: scale(1.2,1.2);
+    animation-name: second;
+    animation-duration:10s;
+    transition-timing-function: ease;
+    /*ease-in-out it makes it slower every time*/
+}
+.special{
+    display: flex;
+    flex-wrap: wrap;
+}
+.special h1{
+    text-align: center;
+    flex: 1;
+}
+.special div{
+    flex: 30%;
+    background-color: lightcyan;
+    border: 2px solid gray;
+    margin: 30px;
+    text-align: center;
+}
+.special h1{
+    transform: translate(50px);
+}
+.special div:hover{
+    transform: scale(1.2,1.2);
+    animation-name: first;
+    animation-duration: 1s;
+    animation-direction: reverse;
+}

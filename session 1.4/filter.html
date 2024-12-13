@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+</head>
+
+<body>
+    <input id="search" type="text" placeholder="Search projects..." maxlength="200">
+    <ul id="project-list">
+        <li>Portfolio Website</li>
+        <li>E-commerce Store</li>
+        <li>Weather App</li>
+    </ul>
+    <script>
+       // get the elements from the html 
+       const searchInput = document.getElementById("search");
+       const projectList = document.getElementById("project-list");
+       
+       // get every element in the list
+       const projects = projectList.getElementsByTagName("li");
+
+       //event listener in the search bar
+       // the input is to make a for loop (tool ma fi input ye loop)
+       // the () is syntax and wew can put arguments in it like the functions
+       // => means then go do the next code
+       searchInput.addEventListener("input" , () => {
+
+        //put the input in the query 
+        const query = searchInput.value.toLowerCase();
+
+        Array.from(projects).forEach((project) => {
+
+            const projectName = project.textContent.toLowerCase();
+
+            project.style.display = projectName.includes(query) ? "" : "none";
+        });
+       });
+    </script>
+
+</body>
+
+</html>

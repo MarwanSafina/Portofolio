@@ -1,0 +1,10 @@
+.navs{
+    display: flex;
+    margin: auto;
+    padding: 0%;
+}
+.navs ul{
+    display: flex;
+    margin: auto;
+    padding: 0%;
+}

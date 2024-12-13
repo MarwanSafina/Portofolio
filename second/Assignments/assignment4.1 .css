@@ -1,0 +1,38 @@
+
+.hed{
+    color: #333;
+    background-color: #d6cfcf;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.cntn{
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+
+.tbl th{
+    background:linear-gradient(90deg, grey, beige);
+    border: 2px black solid;
+    padding: 10px;
+}
+.tbl td{
+    border: 1px black solid;
+    text-align: center;
+    padding: 10px;
+}
+
+.tbl{
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+/*to overwrite on data in odd row*/
+.data:nth-child(odd){
+    background-color: #fffaf0;
+}
+/*to overwrite the data in even row*/ 
+.data:nth-child(even){
+    background-color: #f5f5f5;
+}

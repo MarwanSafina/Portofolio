@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <link rel="stylesheet" href="D:\Full Stack PHP (AMIT) course\second\session 3.1 .css">
+</head>
+<body>
+    <p>Hello <strong>World</strong></p>
+    <div class="name">
+        <form action="https://www.frankfurt-audi.de/news/news-gebrauchtwagen/gw-plus-wochen?gad_source=1&gclid=CjwKCAjwvKi4BhABEiwAH2gcwzdy8kZYZstNXHMJXW1P3FbueHt9PNQhDSCv8CCxmKWEnAofgwJjwhoCHKYQAvD_BwE">
+            <label for="username">Username</label>
+            <input type="text" name="username" placeholder="username" minlength="3" maxlength="5" required>
+            <br>
+            <label for="password">Password</label>
+            <input type="password" name="password" minlength="8" required>
+            <br>
+            <label for="Number">Phone Number</label>
+            <input type="number" name="Number" placeholder="Phone Number" min="0">
+            <br>
+            <label for="Email">Email</label>
+            <input type="email" name="Email" placeholder="Email">
+            <br>
+            <label for="Gender">Gender</label>
+            <select name="Gender" id="">
+                <option value="" disabled selected>select gender</option> <!-- disable this option to be selected-->
+                <option value="female">female</option>
+                <option value="male">male</option>
+            </select>
+            <br>
+            <label for="status">Status :</label>
+            <input type="radio" name="status" value="single" required> Single
+            <input type="radio" name="status" value="married"> Married
+            <br>
+            <label for="date">Birth-Date</label>
+            <input type="date" name="date">
+            <br>
+            <label for="link">Facebook Profile</label>
+            <input type="url" name="facebook profile">
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="picky">
+        <img src="AAST-logo.png" width="300" height="300" alt="">
+    </div>
+</body>
+</html>

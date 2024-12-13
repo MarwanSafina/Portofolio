@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+
+<body>
+    <textarea id="message" placeholder="Type your message..."></textarea>
+    <p id="char-count">200 characters remaining</p>
+   
+    <script>
+        const texter = document.getElementById("message");
+        const CharCount = document.getElementById("char-count");
+        const y = 200;
+
+        texter.addEventListener("input" , () => {
+            const rem = y - texter.value.length;
+
+             CharCount.textContent =`${rem} characters remaining`;
+
+            CharCount.style.color = rem < 20 ? "red" : "black";
+        });
+    </script>
+</body>
+
+</html>

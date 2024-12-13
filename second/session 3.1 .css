@@ -1,0 +1,26 @@
+/* first CSS session*/
+.name{
+    color: brown;
+    background-color: burlywood;
+    border: 10px solid;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 20px;/* the margin makes space between the two contents*/
+    padding: 100px; /* the padding makes space betwwen the border and the content*/
+}
+.picky{
+    background-color: aqua;
+    text-align: center;
+    border: 1px solid;
+    background-image: url("garage.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+p strong{
+    color: red;
+}
+body{
+    background-color: chartreuse;
+}
+.name button :hover{}

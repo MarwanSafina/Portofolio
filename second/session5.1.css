@@ -1,0 +1,29 @@
+.container-sections{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas: "sidebar1 header header"
+    "sidebar1 main sidebar2"
+    "footer footer footer";
+    text-align: center;
+}
+.header{
+    grid-area: header;
+    background-color: brown;
+}
+.main{
+    grid-area: main;
+    background-color: blue;
+}
+.aside-right{
+    grid-area: sidebar1;
+    background-color: aquamarine;
+}
+.aside-left{
+    grid-area: sidebar2;
+    background-color: aqua;
+}
+.footer{
+    grid-area: footer;
+    background-color: darkgreen;
+}

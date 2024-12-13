@@ -1,0 +1,33 @@
+.frm{
+    /*text-align: center;*/
+    line-height: 2;
+    border: 5px brown dashed;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url("audi\ logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-decoration: bold;
+    background-position: center;
+}
+
+.btn{
+    border-color: greenyellow;
+    border-width: 10px;
+    border-style: groove;
+    width: 300px;
+    height: auto;
+    font-size: large;
+    font-weight: 1000;
+    text-align: center;
+    padding: 30px;
+    border-radius: 100px;
+    background-color: green;
+    color: yellow;
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.btn :hover{
+    
+}
